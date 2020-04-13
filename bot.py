@@ -36,8 +36,8 @@ async def update_status():
 async def on_message(message):
     global messages
     messages += 1
-    server_id = client.get_guild(611760401348165632)
-    channels = ["not-spoken-shit-here"]
+    server_id = client.get_guild(YOUR-NUMBER-GOES-HERE)
+    channels = ["none-spoken-things-here"]
 
     if str(message.channel) in channels:
         if message.content == "!hello":
@@ -60,7 +60,7 @@ async def on_join(member):
     global joined
     joined += 1
     for channel in member.server.channels:
-        if str(channel) == "not-spoken-shit-here":
+        if str(channel) == "none-spoken-things-here":
             await client.send_message(f"Welcome to the jungle amigo {member.mention}!")
 
 
