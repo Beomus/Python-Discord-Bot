@@ -45,13 +45,13 @@ async def on_message(message):
         elif message.content == "!users":
             await message.channel.send(f"Number of Members: {server_id.member_count}")
         elif message.content.startswith("!"):
-            await message.channel.send(f"Wrong command retard {message.author.mention}, check !help.")
+            await message.channel.send(f"Wrong command bruh {message.author.mention}, check !help.")
 
 
     if message.content == "!help":
-        embed = discord.Embed(title="Read you illiterate fucks!", description="Commands")
+        embed = discord.Embed(title="Read you this thing right here if you're not a choo-choo!", description="Commands")
         embed.add_field(name="!hello", value="Duh, greetings")
-        embed.add_field(name="!users", value="Show amount of retards here.")
+        embed.add_field(name="!users", value="Show amount of peeps here.")
         await message.channel.send(embed=embed)
 
 
@@ -61,7 +61,7 @@ async def on_join(member):
     joined += 1
     for channel in member.server.channels:
         if str(channel) == "not-spoken-shit-here":
-            await client.send_message(f"Welcome to the jungle retard {member.mention}!")
+            await client.send_message(f"Welcome to the jungle amigo {member.mention}!")
 
 
 client.loop.create_task(update_status())
